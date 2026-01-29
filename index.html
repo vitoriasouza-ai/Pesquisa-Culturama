@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="img/culturama-favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
         <title>Pesquisa Culturama</title>
     </head>
     <body>
@@ -14,7 +17,7 @@
                 <h1>Pesquisa de Opinião</h1>
             </header>
             <section>
-                <form action="" method="">
+                <form action="sucesso.html" method="get">
                     <fieldset>
                         <legend>Dados Pessoais</legend>
                         <label for="name">Nome:</label>
@@ -35,6 +38,121 @@
                         <label for="image">Upload de foto</label>
                         <input id="image" type="file" accept="image/*" name="userImage">
                             <br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Perfil</legend>
+                        <p>Gênero:</p>
+                        <input id="fem" type="radio" name="userGender" value="Feminino">
+                        <label for="fem">Feminino</label>
+
+                        <input id="masc" type="radio" name="userGender" value="Masculino">
+                        <label for="masc">Masculino</label>
+
+                        <input id="notInformed" type="radio" name="userGender" value="notInformed">
+                        <label for="notInformed">Prefiro não informar</label>
+                            <br>
+                        <label for="maritalStatus">Estado Civil:</label>
+                <select id="maritalStatus" name="maritalStatus">
+                        <option value="notInformed">Selecione...</option>
+                        <option value="Solteiro">Solteiro</option>
+                        <option value="Casado">Casado</option>
+                        <option value="Divorciado">Divorciado</option>
+                        <option value="Casado">União Estável</option>
+                </select>
+                            <br>
+                        <label for="state">Estado:</label>
+                        <select id="state" name="userState" required>
+                            <option value="acre">Acre</option>  
+                            <option value="alagoas">Alagoas</option> 
+                            <option value="amapa">Amapá</option>   
+                            <option value="amazonas">Amazonas</option>
+                            <option value="bahia">Bahia</option>   
+                            <option value="ceara">Ceará</option> 
+                            <option value="distritoFederal">Distrito Federal</option>  
+                            <option value="espiritoSanto">Espirito Santo</option>    
+                            <option value="goias">Goiás</option> 
+                            <option value="maranhao">Maranhão</option>    
+                            <option value="matoGrossoDoSul">Mato Grosso do Sul</option> 
+                            <option value="matoGrosso">Mato Grosso</option>   
+                            <option value="minasGerais">Minas Gerais</option>   
+                            <option value="para">Pará</option>
+                            <option value="paraiba">Paraíba</option>   
+                            <option value="parana">Paraná</option>  
+                            <option value="pernambuco">Pernambuco</option>   
+                            <option value="piaui">Piauí</option> 
+                            <option value="rioDeJaneiro">Rio de Janeiro</option>  
+                            <option value="rioGrandeDoNorte">Rio Grande do Norte</option>    
+                            <option value="rioGrandeDoSul">Rio Grande do Sul</option>    
+                            <option value="rondonia">Rondônia</option>  
+                            <option value="roraima">Roraima</option>    
+                            <option value="santaCatarina">Santa Catarina</option>    
+                            <option value="saoPaulo">São Paulo</option>    
+                            <option value="sergipe">Sergipe</option>    
+                            <option value="tocantins">Tocantins</option>
+                        </select>
+
+                        <label for="city">Cidade:</label>
+                        <input id="city" type="text" name="userCity" placeholder="Ex.: Fortaleza">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Hábitos</legend>
+                    <p>Redes Sociais:</p>
+                        <input id="instagram" type="checkbox" name="social" value="instagram">
+                        <label for="instagram">Instagram</label>
+                    <br>
+                        <input id="facebook" type="checkbox" name="social" value="facebook">
+                        <label for="facebook">Facebook</label>
+                    <br>
+                        <input id="linkedin" type="checkbox" name="social" value="linkedin">
+                        <label for="linkedin">Linkedin</label>
+                    <br>
+                        <input id="x" type="checkbox" name="social" value="x">
+                        <label for="x">X</label>
+                    <br>
+
+                    <label for="musicStyle">Estilo Musical:</label>
+                    <input list="styleTypes" type="text" id="musicStyle" name="musicStyle">
+                    <datalist id="styleTypes">
+                        <option value="Rock">
+                        <option value="Reggae">
+                        <option value="Pop">
+                        <option value="Hip-Hop">
+                        <option value="Jazz">
+                    </datalist>
+                    <br>
+
+                    <label for="favoriteColor">Cor Favorita:</label>
+                    <input type="color" id="favoriteColor" name="favoriteColor">
+                    <br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Opinião</legend>
+                        <p>O que você acha da qualidade do nosso serviço?</p>
+                        <input type="radio" id="greatRating" name="userRating" value="otima">
+                    <label for="greatRating">Ótima</label><br>
+                    
+                    <input type="radio" id="goodRating" name="userRating" value="bom">
+                    <label for="goodRating">Bom</label><br>
+                    
+                    <input type="radio" id="regularRating" name="userRating" value="regular">
+                    <label for="regularRating">Regular</label><br>
+
+                    <input type="radio" id="badRating" name="userRating" value="ruim">
+                    <label for="badRating">Ruim</label>
+                    <br>
+
+                    <label for="comments">Escreva sua opinião:</label>
+                    <br>
+                    <textarea id="comments" name="userComments" rows="4" cols="50" placeholder="Digite aqui a sua opinião..."></textarea>                    
+                    </fieldset>
+                    <fieldset>
+                    <legend>Confirmações</legend>
+
+                    <input type="checkbox" id="userLgpd" name="userLgpd" value="accepted" required>
+                    <label for="userLgpd">Eu aceito participar da pesquisa</label><br>
+                    
+                    <input type="checkbox" id="userGetResult" name="getResult" value="accepted">
+                    <label for="userGetResult">Desejo receber o resultado por e-mail</label><br>
                     </fieldset>
                     <button type="submit">Enviar</button>
                     <button type="reset">Limpar</button>
