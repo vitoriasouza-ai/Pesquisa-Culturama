@@ -15,7 +15,7 @@
             </header>
             <section>
                 <form action="" method="">
-                    <!-- <fieldset>
+                    <fieldset>
                         <legend>Dados Pessoais</legend>
                         <label for="name">Nome:</label>
                         <input id="name" type="text" name="userName" required>
@@ -35,8 +35,8 @@
                         <label for="image">Upload de foto</label>
                         <input id="image" type="file" accept="image/*" name="userImage">
                             <br>
-                    </fieldset> -->
-                    <!-- <fieldset>
+                    </fieldset>
+                    <fieldset>
                         <legend>Perfil</legend>
                         <p>Gênero:</p>
                         <input id="fem" type="radio" name="userGender" value="Feminino">
@@ -90,8 +90,8 @@
 
                         <label for="city">Cidade:</label>
                         <input id="city" type="text" name="userCity" placeholder="Ex.: Fortaleza">
-                    </fieldset> -->
-                    <!-- <fieldset>
+                    </fieldset>
+                    <fieldset>
                         <legend>Hábitos</legend>
                         <p>Redes Sociais:</p>
                         <input id="instagram" type="checkbox" name="social" value="instagram">
@@ -121,7 +121,7 @@
                     <label for="favoriteColor">Cor Favorita:</label>
                     <input type="color" id="favoriteColor" name="favoriteColor">
                     <br>
-                    </fieldset> -->
+                    </fieldset>
                     <fieldset>
                         <legend>Opinião</legend>
                         <p>O que você acha da qualidade do nosso serviço?</p>
@@ -141,6 +141,15 @@
                     <label for="comments">Escreva sua opinião:</label>
                     <br>
                     <textarea id="comments" name="userComments" rows="4" cols="50" placeholder="Digite aqui a sua opinião..."></textarea>                    
+                    </fieldset>
+                    <fieldset>
+                    <legend>Confirmações</legend>
+
+                    <input type="checkbox" id="userLgpd" name="userLgpd" value="accepted" required>
+                    <label for="userLgpd">Eu aceito participar da pesquisa</label><br>
+                    
+                    <input type="checkbox" id="userGetResult" name="getResult" value="accepted">
+                    <label for="userGetResult">Desejo receber o resultado por e-mail</label><br>
                     </fieldset>
                     <button type="submit">Enviar</button>
                     <button type="reset">Limpar</button>
