@@ -91,7 +91,7 @@
                         <label for="city">Cidade:</label>
                         <input id="city" type="text" name="userCity" placeholder="Ex.: Fortaleza">
                     </fieldset> -->
-                    <fieldset>
+                    <!-- <fieldset>
                         <legend>Hábitos</legend>
                         <p>Redes Sociais:</p>
                         <input id="instagram" type="checkbox" name="social" value="instagram">
@@ -121,6 +121,26 @@
                     <label for="favoriteColor">Cor Favorita:</label>
                     <input type="color" id="favoriteColor" name="favoriteColor">
                     <br>
+                    </fieldset> -->
+                    <fieldset>
+                        <legend>Opinião</legend>
+                        <p>O que você acha da qualidade do nosso serviço?</p>
+                        <input type="radio" id="greatRating" name="userRating" value="otima">
+                    <label for="greatRating">Ótima</label><br>
+                    
+                    <input type="radio" id="goodRating" name="userRating" value="bom">
+                    <label for="goodRating">Bom</label><br>
+                    
+                    <input type="radio" id="regularRating" name="userRating" value="regular">
+                    <label for="regularRating">Regular</label><br>
+
+                    <input type="radio" id="badRating" name="userRating" value="ruim">
+                    <label for="badRating">Ruim</label>
+                    <br>
+
+                    <label for="comments">Escreva sua opinião:</label>
+                    <br>
+                    <textarea id="comments" name="userComments" rows="4" cols="50" placeholder="Digite aqui a sua opinião..."></textarea>                    
                     </fieldset>
                     <button type="submit">Enviar</button>
                     <button type="reset">Limpar</button>
