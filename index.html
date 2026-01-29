@@ -36,7 +36,7 @@
                         <input id="image" type="file" accept="image/*" name="userImage">
                             <br>
                     </fieldset> -->
-                    <fieldset>
+                    <!-- <fieldset>
                         <legend>Perfil</legend>
                         <p>Gênero:</p>
                         <input id="fem" type="radio" name="userGender" value="Feminino">
@@ -90,6 +90,37 @@
 
                         <label for="city">Cidade:</label>
                         <input id="city" type="text" name="userCity" placeholder="Ex.: Fortaleza">
+                    </fieldset> -->
+                    <fieldset>
+                        <legend>Hábitos</legend>
+                        <p>Redes Sociais:</p>
+                        <input id="instagram" type="checkbox" name="social" value="instagram">
+                        <label for="instagram">Instagram</label>
+                    <br>
+                        <input id="facebook" type="checkbox" name="social" value="facebook">
+                        <label for="facebook">Facebook</label>
+                    <br>
+                        <input id="linkedin" type="checkbox" name="social" value="linkedin">
+                        <label for="linkedin">Linkedin</label>
+                    <br>
+                        <input id="x" type="checkbox" name="social" value="x">
+                        <label for="x">X</label>
+                    <br>
+
+                    <label for="musicStyle">Estilo Musical:</label>
+                    <input list="styleTypes" type="text" id="musicStyle" name="musicStyle">
+                    <datalist id="styleTypes">
+                        <option value="Rock">
+                        <option value="Reggae">
+                        <option value="Pop">
+                        <option value="Hip-Hop">
+                        <option value="Jazz">
+                    </datalist>
+                    <br>
+
+                    <label for="favoriteColor">Cor Favorita:</label>
+                    <input type="color" id="favoriteColor" name="favoriteColor">
+                    <br>
                     </fieldset>
                     <button type="submit">Enviar</button>
                     <button type="reset">Limpar</button>
