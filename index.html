@@ -15,7 +15,7 @@
             </header>
             <section>
                 <form action="" method="">
-                    <fieldset>
+                    <!-- <fieldset>
                         <legend>Dados Pessoais</legend>
                         <label for="name">Nome:</label>
                         <input id="name" type="text" name="userName" required>
@@ -35,6 +35,61 @@
                         <label for="image">Upload de foto</label>
                         <input id="image" type="file" accept="image/*" name="userImage">
                             <br>
+                    </fieldset> -->
+                    <fieldset>
+                        <legend>Perfil</legend>
+                        <p>Gênero:</p>
+                        <input id="fem" type="radio" name="userGender" value="Feminino">
+                        <label for="fem">Feminino</label>
+
+                        <input id="masc" type="radio" name="userGender" value="Masculino">
+                        <label for="masc">Masculino</label>
+
+                        <input id="notInformed" type="radio" name="userGender" value="notInformed">
+                        <label for="notInformed">Prefiro não informar</label>
+                            <br>
+                        <label for="maritalStatus">Estado Civil:</label>
+                <select id="maritalStatus" name="maritalStatus">
+                        <option value="notInformed">Selecione...</option>
+                        <option value="Solteiro">Solteiro</option>
+                        <option value="Casado">Casado</option>
+                        <option value="Divorciado">Divorciado</option>
+                        <option value="Casado">União Estável</option>
+                </select>
+                            <br>
+                        <label for="state">Estado:</label>
+                        <select id="state" name="userState" required>
+                            <option value="acre">Acre</option>  
+                            <option value="alagoas">Alagoas</option> 
+                            <option value="amapa">Amapá</option>   
+                            <option value="amazonas">Amazonas</option>
+                            <option value="bahia">Bahia</option>   
+                            <option value="ceara">Ceará</option> 
+                            <option value="distritoFederal">Distrito Federal</option>  
+                            <option value="espiritoSanto">Espirito Santo</option>    
+                            <option value="goias">Goiás</option> 
+                            <option value="maranhao">Maranhão</option>    
+                            <option value="matoGrossoDoSul">Mato Grosso do Sul</option> 
+                            <option value="matoGrosso">Mato Grosso</option>   
+                            <option value="minasGerais">Minas Gerais</option>   
+                            <option value="para">Pará</option>
+                            <option value="paraiba">Paraíba</option>   
+                            <option value="parana">Paraná</option>  
+                            <option value="pernambuco">Pernambuco</option>   
+                            <option value="piaui">Piauí</option> 
+                            <option value="rioDeJaneiro">Rio de Janeiro</option>  
+                            <option value="rioGrandeDoNorte">Rio Grande do Norte</option>    
+                            <option value="rioGrandeDoSul">Rio Grande do Sul</option>    
+                            <option value="rondonia">Rondônia</option>  
+                            <option value="roraima">Roraima</option>    
+                            <option value="santaCatarina">Santa Catarina</option>    
+                            <option value="saoPaulo">São Paulo</option>    
+                            <option value="sergipe">Sergipe</option>    
+                            <option value="tocantins">Tocantins</option>
+                        </select>
+
+                        <label for="city">Cidade:</label>
+                        <input id="city" type="text" name="userCity" placeholder="Ex.: Fortaleza">
                     </fieldset>
                     <button type="submit">Enviar</button>
                     <button type="reset">Limpar</button>
